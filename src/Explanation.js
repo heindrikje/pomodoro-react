@@ -1,15 +1,15 @@
-import react from "react";
+import React from "react";
 
 export default function Explanation() {
   return (
     <div className="Explanation">
-      <div>How it works:</div>
+      <div className="caption-how">How it works:</div>
       <ol>
         <li>Write down the task you want to accomplish.</li>
         <li>Set the pomodoro timer (typically for 25 minutes).</li>
         <li>Work on the task.</li>
         <li>
-          Stop working when the timer rings and take a short break (typically 5
+          Stop working when the time is up and take a short break (typically 5
           minutes).
         </li>
         <li>Go back to Step 2 and Repeat.</li>
@@ -18,7 +18,14 @@ export default function Explanation() {
           minutes).
         </li>
       </ol>
-      <div>Why it works:</div>
+      <a
+        href="http://3.249.194.220/download/pomodoro-technique.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        classname="caption-why"
+      >
+        Why it works:
+      </a>
       <p>
         The stages of planning, tracking, recording, processing and visualizing
         are fundamental to the technique. In the planning phase, tasks are

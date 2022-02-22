@@ -10,6 +10,17 @@ export default function App() {
         <h2>The Timer for Your Perfect Work Routine</h2>
         <Timer />
         <Explanation />
+        <footer>
+          <a
+            href="https://github.com/heindrikje/pomodoro-react"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-link"
+          >
+            Open-source code
+          </a>{" "}
+          by Heindrikje Kuhs
+        </footer>
       </div>
     </div>
   );
