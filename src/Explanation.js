@@ -22,7 +22,7 @@ export default function Explanation() {
         href="http://3.249.194.220/download/pomodoro-technique.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        classname="caption-why"
+        className="caption-why"
       >
         Why it works:
       </a>
