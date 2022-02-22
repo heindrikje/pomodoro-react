@@ -1,0 +1,42 @@
+.Timer .card {
+  margin: 40px auto;
+  border: 1px solid #537895;
+  border-radius: 20px;
+  padding: 40px 0;
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  max-width: 700px;
+}
+
+button {
+  margin: 0 40px;
+  padding: 10px 0;
+  border: 1px solid #466987;
+  border-radius: 4px;
+  font-size: 18px;
+  transition: all 150ms ease-in-out;
+  background-color: #e5e5e5;
+}
+
+.upper-row-button:hover {
+  opacity: 0.8;
+}
+
+.start-button:hover {
+  background: #50cb86;
+}
+
+.stop-button:hover {
+  background: #dc2f2f;
+  border: 1px solid #09203f;
+}
+
+.reset-button:hover {
+  opacity: 0.8;
+}
+
+.countdown {
+  color: #9fd3c7;
+  text-align: center;
+  font-size: 150px;
+  padding: 20px 0;
+}
