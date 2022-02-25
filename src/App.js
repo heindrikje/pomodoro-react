@@ -1,5 +1,5 @@
 import "./App.css";
-import Timer from "./Timer";
+import TimerCard from "./TimerCard";
 import Explanation from "./Explanation";
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
       <div className="container">
         <h1>Pomodoro Timer</h1>
         <h2>The Timer for Your Perfect Work Routine</h2>
-        <Timer />
+        <TimerCard />
         <Explanation />
         <footer>
           <a
