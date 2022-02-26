@@ -10,3 +10,18 @@
 .App h1 {
   font-size: 60px;
 }
+
+.App footer {
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.App footer .github-link {
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+}
+.App footer .github-link:hover {
+  text-decoration: underline;
+  color: #0c58ca;
+}

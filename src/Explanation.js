@@ -1,21 +1,32 @@
 import React from "react";
+import "./Explanation.css";
 
 export default function Explanation() {
   return (
     <div className="Explanation">
-      <div className="caption-how">How it works:</div>
+      <strong className="caption-how">How it works:</strong>
       <ol>
-        <li>Write down the task you want to accomplish.</li>
-        <li>Set the pomodoro timer (typically for 25 minutes).</li>
-        <li>Work on the task.</li>
         <li>
-          Stop working when the time is up and take a short break (typically 5
-          minutes).
+          <span className="emoji">📝</span> Write down the task(s) you want to
+          accomplish.
         </li>
-        <li>Go back to Step 2 and Repeat.</li>
         <li>
-          After four pomodori are done, take a long break (typically 20
-          minutes).
+          <span className="emoji">⏱</span> Set the pomodoro timer.
+        </li>
+        <li>
+          <span className="emoji">🧑‍💻</span> Work on the task. Don't get
+          distracted, you can do this!
+        </li>
+        <li>
+          <span className="emoji">😌</span> Stop working when the time is up and
+          take a short break (typically 5 minutes).
+        </li>
+        <li>
+          <span className="emoji">🔁</span> Go back to Step 2 and repeat.
+        </li>
+        <li>
+          <span className="emoji">🏃🏽‍♀️ 🍎 🛁</span> After four pomodori are done,
+          take a long break (typically 20 minutes).
         </li>
       </ol>
       <a
@@ -26,10 +37,10 @@ export default function Explanation() {
       >
         Why it works:
       </a>
-      <p>
+      <p className="explanation-paragraph">
         The stages of planning, tracking, recording, processing and visualizing
         are fundamental to the technique. In the planning phase, tasks are
-        prioritized by recording them in a "To Do Today" list, enabling users to
+        prioritized by recording them in a To-do List, enabling users to
         estimate the effort they will require. As pomodoros are completed, they
         are recorded, adding to a sense of accomplishment and providing raw data
         for subsequent self-observation and improvement.

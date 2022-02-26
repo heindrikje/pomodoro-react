@@ -20,32 +20,16 @@ export default function CompoundTimer(props) {
               />
             </div>
             <div className="row">
-              <button
-                className="col start-button"
-                id="start-button"
-                onClick={start}
-              >
+              <button className="col start-button" onClick={start}>
                 Start
               </button>
-              <button
-                className="col pause-button"
-                id="pause-button"
-                onClick={pause}
-              >
+              <button className="col pause-button" onClick={pause}>
                 Pause
               </button>
-              <button
-                className="col resume-button"
-                id="resume-button"
-                onClick={resume}
-              >
+              <button className="col resume-button" onClick={resume}>
                 Resume
               </button>
-              <button
-                className="col reset-button"
-                id="reset-button"
-                onClick={reset}
-              >
+              <button className="col reset-button" onClick={reset}>
                 Reset
               </button>
             </div>
