@@ -10,6 +10,7 @@ export default function App() {
         <h2>The Timer for Your Perfect Work Routine</h2>
         <TimerCard />
         <Explanation />
+        <hr />
         <footer>
           <a
             href="https://github.com/heindrikje/pomodoro-react"

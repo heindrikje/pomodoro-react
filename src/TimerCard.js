@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Timer from "react-compound-timerv2";
+import CompoundTimer from "./CompoundTimer";
 import "./Timer.css";
 
 export default function TimerCard() {
@@ -7,18 +7,17 @@ export default function TimerCard() {
 
   function pomodoroInterval(event) {
     event.preventDefault();
-    setInitialTime = 25 * 60000;
+    setInitialTime(25 * 60000);
   }
 
   function shortBreakInterval(event) {
     event.preventDefault();
-    setInitialTime = 5 * 60000;
-    console.log(initialTime);
+    setInitialTime(5 * 60000);
   }
 
   function longBreakInterval(event) {
     event.preventDefault();
-    setInitialTime = 20 * 60000;
+    setInitialTime(20 * 60000);
   }
 
   return (
@@ -47,56 +46,7 @@ export default function TimerCard() {
             Long Break
           </button>
         </div>
-        <div key={initialTime}>
-          <Timer
-            initialTime={initialTime}
-            startImmediately={false}
-            direction="backward"
-          >
-            {({ start, resume, pause, reset }) => (
-              <React.Fragment>
-                <div className="countdown" id="countdown">
-                  <Timer.Minutes />:
-                  <Timer.Seconds
-                    formatValue={(text) =>
-                      text.toString().length > 1 ? text : "0" + text
-                    }
-                  />
-                </div>
-                <div className="row">
-                  <button
-                    className="col start-button"
-                    id="start-button"
-                    onClick={start}
-                  >
-                    Start
-                  </button>
-                  <button
-                    className="col pause-button"
-                    id="pause-button"
-                    onClick={pause}
-                  >
-                    Pause
-                  </button>
-                  <button
-                    className="col resume-button"
-                    id="resume-button"
-                    onClick={resume}
-                  >
-                    Resume
-                  </button>
-                  <button
-                    className="col reset-button"
-                    id="reset-button"
-                    onClick={reset}
-                  >
-                    Reset
-                  </button>
-                </div>
-              </React.Fragment>
-            )}
-          </Timer>
-        </div>
+        <CompoundTimer initialTime={initialTime} />
       </div>
     </div>
   );
